@@ -13,10 +13,36 @@ body {
   height: 100vh;
   flex-direction: column;
 }
+.container {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin-bottom: 9rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(136, 136, 226);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+form {
+  margin-bottom: 5rem;
+}
+.result {
+  text-align: left;
+}
 input {
   border: none;
-  border: solid 1px black;
+  border-radius: 2rem;
   background: transparent;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(94, 94, 138);
+}
+input:focus {
+  outline: none;
 }
 button {
   border: none;
@@ -29,4 +55,45 @@ button {
   border-radius: 2rem;
   font-size: 1.4rem;
   font-weight: 400;
+}
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(136, 136, 226);
+}
+.rules {
+  position: absolute;
+  left: 37%;
+  padding: 2rem;
+  width: 40%;
+  height: 40%;
+  display: none;
+
+  background: rgb(136, 136, 226);
+  /* border: 1px solid #000; */
+  transition: all 0.2s ease-in-out;
+}
+
+.rules h4 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(102, 101, 101);
+  margin-bottom: 2rem;
+}
+.rules ul {
+  list-style: none;
+}
+.rules ul li {
+  margin-bottom: 2rem;
+  color: rgb(56, 56, 56);
+  font-size: 1.5rem;
+}
+.rules.open {
+  display: block;
+}
+#button-rules {
+  position: absolute;
+  right: 1%;
+  top: 4%;
+  cursor: pointer;
 }

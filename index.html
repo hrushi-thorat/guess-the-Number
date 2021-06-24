@@ -8,25 +8,37 @@
     <title>Guessing Game</title>
   </head>
   <body>
-    <nav>
-      <h1>Guessing Game</h1>
-    </nav>
-    <main>
-      <form>
-        <input
-          type="number"
-          placeholder="Guess your Number"
-          class="user input"
-          id="input"
-        />
-        <button id="button" type="submit">Check</button>
-      </form>
+    <div class="container">
+      <nav>
+        <h1>Guessing Game</h1>
+      </nav>
+      <main>
+        <form>
+          <input
+            placeholder="Guess your Number"
+            class="user input"
+            id="input"
+          />
+          <button id="button" type="submit">Check</button>
+        </form>
 
-      <div class="empty-div">
-        <h3 class="result"></h3>
+        <div class="empty-div">
+          <h3 class="result"></h3>
+        </div>
+      </main>
+      <div class="rules">
+        <h4>Rules</h4>
+        <ul>
+          <li>1)You have to guess The No that ramdomly Generated</li>
+          <li>
+            2)when you guess The no You will get notify if the no is less or
+            greater
+          </li>
+          <li>3)the number is between 1 to 100</li>
+        </ul>
       </div>
-    </main>
-
+      <button id="button-rules">Rules</button>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
